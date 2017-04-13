@@ -19,7 +19,6 @@ make
 make install
 ####
 sleep 5
-
 groupadd -g 25 apache && useradd -c "Apache Server" -d /var/www -g apache -s /bin/false -u 79 apache   ###(group id)
 cp $FILES/httpd-2.4.25 /etc/httpd/bin/suexec
 chgrp apache /etc/httpd/bin/suexec && chmod  4574 /etc/httpd/bin/suexec
